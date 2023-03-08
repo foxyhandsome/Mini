@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MarketDetail"
+    android:background="@drawable/background_intro3">
+
+
+        <TextView
+            android:id="@+id/txtreg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/fcthai"
+            android:gravity="center"
+            android:text="Market Detail"
+            android:textColor="#FFFFFF"
+            android:shadowColor="#FF8BED"
+            android:shadowDx="0.0"
+            android:shadowDy="0.0"
+            android:shadowRadius="50"
+            android:textStyle="bold"
+            android:textSize="40dp" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtinputlayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Market Name"
+            android:layout_below="@id/txtreg"
+            android:textColorHint="#343434"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/marketusernamereg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_btn_intro2"
+                android:backgroundTint="#343434"
+                android:fontFamily="@font/fcthai"
+                android:drawableRight="@drawable/ic_marketuserlogin"
+                android:minWidth="48dp"
+                android:minHeight="55dp"></com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtinputlayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Market Address"
+            android:layout_below="@id/txtinputlayout1"
+            android:textColorHint="#343434"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/marketaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_btn_intro2"
+                android:backgroundTint="#343434"
+                android:fontFamily="@font/fcthai"
+                android:drawableRight="@drawable/ic_marketuserlogin"
+                android:minWidth="48dp"
+                android:minHeight="55dp"></com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtinputlayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Market Tel"
+            android:layout_below="@id/txtinputlayout2"
+            android:textColorHint="#343434"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/markettel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_btn_intro2"
+                android:backgroundTint="#343434"
+                android:fontFamily="@font/fcthai"
+                android:drawableRight="@drawable/ic_tel"
+                android:minWidth="48dp"
+                android:minHeight="55dp"></com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btnconreg"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtinputlayout3"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/background_btn_intro"
+            android:backgroundTint="#323232"
+            android:fontFamily="@font/fcthai"
+            android:text="ยืนยัน"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btncal"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtinputlayout3"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/btnconreg"
+            android:background="@drawable/background_btn_intro"
+            android:backgroundTint="#323232"
+            android:fontFamily="@font/fcthai"
+            android:text="ยกเลิก"
+            android:textStyle="bold" />
+
+</RelativeLayout>

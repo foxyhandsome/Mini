@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserLogin"
+    android:background="@drawable/background_intro3">
+
+    <TextView
+        android:id="@+id/txtlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/fcthai"
+        android:gravity="center"
+        android:text="@string/login_as_user"
+        android:textColor="#FFFFFF"
+        android:shadowColor="#FF8BED"
+        android:shadowDx="0.0"
+        android:shadowDy="0.0"
+        android:shadowRadius="50"
+        android:textStyle="bold"
+        android:textSize="40dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:layout_below="@+id/txtlogin"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/userlogin" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtinputlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginRight="30dp"
+        android:textColorHint="#343434"
+        android:hint="@string/username">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/usernamelog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_btn_intro2"
+            android:backgroundTint="#343434"
+            android:drawableRight="@drawable/ic_userlogin"
+            android:fontFamily="@font/fcthai"
+            android:minWidth="48dp"
+            android:minHeight="48dp"></com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtinputlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtinputlayout1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:textColorHint="#343434"
+        android:hint="@string/password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordlog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_btn_intro2"
+            android:backgroundTint="#343434"
+            android:drawableRight="@drawable/ic_password"
+            android:fontFamily="@font/fcthai"
+            android:inputType="textPassword"
+            android:minWidth="48dp"
+            android:minHeight="48dp"></com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btncon"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtinputlayout2"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_btn_intro"
+        android:backgroundTint="#343434"
+        android:textColor="#FFFBFB"
+        android:fontFamily="@font/fcthai"
+        android:text="ยืนยัน"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btncal"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtinputlayout2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/btncon"
+        android:background="@drawable/background_btn_intro"
+        android:backgroundTint="#343434"
+        android:textColor="#FFFBFB"
+        android:fontFamily="@font/fcthai"
+        android:text="ยกเลิก"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtreg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btncon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/fcthai"
+        android:text="@string/create_a_new_user_here"
+        android:textColor="#343434"
+        android:textStyle="bold" />
+
+
+
+
+</RelativeLayout>

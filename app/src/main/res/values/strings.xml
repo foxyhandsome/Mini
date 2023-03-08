@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Mini</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login_as_user">Login as User</string>
+    <string name="create_a_new_user_here">Create a new user here.</string>
+    <string name="register_as_user">Register as User</string>
+    <string name="fullname">Fullname</string>
+    <string name="email">Email</string>
+    <string name="tel">Tel</string>
+    <string name="register_as_market">Register as Market</string>
+    <string name="marketusername">Marketusername</string>
+    <string name="login_as_market">Login as Market</string>
+    <string name="create_a_new_market_user_here">Create a new Market user here.</string>
+</resources>

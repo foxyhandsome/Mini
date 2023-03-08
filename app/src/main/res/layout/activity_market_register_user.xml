@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MarketRegisterUser"
+    android:background="@drawable/background_intro3">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtreg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/fcthai"
+            android:gravity="center"
+            android:text="@string/register_as_market"
+            android:textColor="#FFFFFF"
+            android:shadowColor="#FF8BED"
+            android:shadowDx="0.0"
+            android:shadowDy="0.0"
+            android:shadowRadius="50"
+            android:textStyle="bold"
+            android:textSize="40dp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_below="@+id/txtreg"
+            android:src="@drawable/registermarket"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtinputlayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/marketusername"
+            android:textColorHint="#343434"
+            android:layout_marginTop="300dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/marketusernamereg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_btn_intro2"
+                android:backgroundTint="#343434"
+                android:drawableRight="@drawable/ic_marketuserlogin"
+                android:fontFamily="@font/fcthai"
+                android:minWidth="48dp"
+                android:minHeight="48dp">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtinputlayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:textColorHint="#343434"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_below="@id/txtinputlayout1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/marketpasswordreg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_btn_intro2"
+                android:backgroundTint="#343434"
+                android:drawableRight="@drawable/ic_password"
+                android:fontFamily="@font/fcthai"
+                android:inputType="textPassword"
+                android:minWidth="48dp"
+                android:minHeight="48dp"></com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtinputlayout3"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:textColorHint="#343434"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_below="@id/txtinputlayout2">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailreg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_btn_intro2"
+                android:backgroundTint="#343434"
+                android:drawableRight="@drawable/ic_email"
+                android:fontFamily="@font/fcthai"
+                android:minWidth="48dp"
+                android:minHeight="48dp"></com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtinputlayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tel"
+            android:textColorHint="#343434"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_below="@id/txtinputlayout2"
+            android:layout_toRightOf="@+id/txtinputlayout3">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/telreg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_btn_intro2"
+                android:backgroundTint="#343434"
+                android:drawableRight="@drawable/ic_tel"
+                android:fontFamily="@font/fcthai"
+                android:minWidth="48dp"
+                android:minHeight="48dp"></com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btnconreg"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtinputlayout4"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/background_btn_intro"
+            android:backgroundTint="#323232"
+            android:textColor="#FFFBFB"
+            android:fontFamily="@font/fcthai"
+            android:text="ยืนยัน"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btncal"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtinputlayout4"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/btnconreg"
+            android:background="@drawable/background_btn_intro"
+            android:backgroundTint="#323232"
+            android:textColor="#FFFBFB"
+            android:fontFamily="@font/fcthai"
+            android:text="ยกเลิก"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtlog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnconreg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/fcthai"
+            android:text="Already have a Market User?"
+            android:textColor="#343434"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</ScrollView>
