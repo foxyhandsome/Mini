@@ -14,7 +14,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/fcthai"
-        android:text="Here Beer isus"
+        android:text="WELCOME"
         android:textColor="#FFFFFF"
         android:shadowColor="#FF8BED"
         android:shadowDx="0.0"
