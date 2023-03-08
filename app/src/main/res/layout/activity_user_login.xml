@@ -14,7 +14,7 @@
         android:layout_marginTop="40dp"
         android:fontFamily="@font/fcthai"
         android:gravity="center"
-        android:text="@string/login_as_user"
+        android:text="เข้าสู่ระบบ"
         android:textColor="#FFFFFF"
         android:shadowColor="#FF8BED"
         android:shadowDx="0.0"
@@ -120,7 +120,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/fcthai"
-        android:text="@string/create_a_new_user_here"
+        android:text="สร้างผู้ใช้ใหม่ที่นี่"
         android:textColor="#343434"
         android:textStyle="bold" />
 

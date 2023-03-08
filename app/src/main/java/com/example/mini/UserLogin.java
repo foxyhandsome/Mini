@@ -77,13 +77,22 @@ public class UserLogin extends AppCompatActivity {
                                 if (putData.onComplete()) {
                                     progressBar.setVisibility(View.GONE);
                                     String result = putData.getResult();
-                                    if(result.equals("User login completed")){
+                                    if(result.equals("Admin login completed")){
                                         Toast.makeText(getApplicationContext(),result,Toast.LENGTH_SHORT).show();
+                                        Intent intent = new Intent(getApplicationContext(), AdminHome.class);
+                                        startActivity(intent);
+                                        finish();
+                                    }if (result.equals("User login completed")) {
+                                        Toast.makeText(getApplicationContext(), result, Toast.LENGTH_SHORT).show();
                                         Intent intent = new Intent(getApplicationContext(), Home.class);
                                         startActivity(intent);
                                         finish();
-                                    }
-                                    else {
+                                    }if (result.equals("Market login completed")) {
+                                        Toast.makeText(getApplicationContext(), result, Toast.LENGTH_SHORT).show();
+                                        Intent intent = new Intent(getApplicationContext(), MarketHome.class);
+                                        startActivity(intent);
+                                        finish();
+                                    } if (result.equals("Username or Password incorrect")){
                                         Toast.makeText(getApplicationContext(),result,Toast.LENGTH_SHORT).show();
                                     }
                                 }
